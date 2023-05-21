@@ -1,0 +1,31 @@
+select count(*) from videos
+where author_id='1';
+
+select avg(duration_secs) from videos;
+select title, duration_secs
+from videos 
+order by duration_secs desc
+limit 2;
+
+select * from donations;
+insert into donations(donation_id,
+created_at,
+amount,
+donator_id,
+recipient_id,
+commentary)
+values(1,current_timestamp(), 250, 5,3,"from Corporation Beer"),
+(2,current_timestamp(), 50.5, 4,4,"for label"),
+(3,current_timestamp(), 20.098, 3,5,"f..."),
+(4,current_timestamp(), 500, 2,1,"from Co"),
+(5,current_timestamp(), 12340, 1,1,"phone +233867803");
+
+select*
+from donations;
+select sum(amount)
+from donations
+where recipient_id='2';
+
+select sum(amount)
+from donations
+where recipient_id='1'
