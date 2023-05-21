@@ -29,3 +29,6 @@ where recipient_id='2';
 select sum(amount)
 from donations
 where recipient_id='1'
+
+
+https://dbdiagram.io/d/646a4cb0dca9fb07c47aa8d1
